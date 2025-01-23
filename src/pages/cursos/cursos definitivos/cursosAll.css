@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: GeisSans;
+    src: url(/public/media/e11418ac562b8ac1-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 100 900
+}
+
+@font-face {
+    font-family: GeistSans_Fallback;
+    src: local("Arial");
+    ascent-override: 85.83%;
+    descent-override: 20.52%;
+    line-gap-override: 9.33%;
+    size-adjust: 107.19%
+}
+
+:root {
+    --primary__color: rgb(250 204 21);
+    --secondaryGray__color: #898b8a;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'GeisSans', 'GeistSans_Fallback';
+    color: rgb(255, 255, 255);
+    background-color: rgb(2 6 23);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+.allHeader {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+}
+
+.logoNav img {
+    margin-right: 10px;
+}
+
+.logoNav span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hubLogo {
+    color: #535353;
+}
+
+.toBack__button {
+    margin-top: 10px;
+}
+
+.afterButton {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.897);
+    font-weight: bold;
+    background-color: #fc619c;
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.afterButton:hover {
+    background-color: #fc619cdf;
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+h1 {
+    text-align: start;
+    margin-bottom: 20px;
+}

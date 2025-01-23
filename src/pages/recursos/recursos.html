@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevHub - Portal Web Informático</title>
+<link rel="icon" href="/public/media/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" href="./recursos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+<div class="allContent">
+<header class="nav-header" id="header-nav">
+<nav class="nav-tag">
+    <div class="logo-container">
+        <img class="logo-img" src="/public/media/favicon.svg" alt="Logo de la Página" loading="lazy">
+    </div>
+    <div class="div_logoTitle">
+        <span class="logoTitle">DevHub</span>
+    </div>
+    <div class="navList-container">
+        <ul class="nav-ul">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="/src/pages/cursos/cursos.html">Cursos</a></li>
+            <li><a href="/src/pages/noticias/noticias.html">Noticias</a></li>
+            <li><a href="/src/pages/cuestionarios/encuesta.html">Cuestionarios</a></li>
+            <li><a href="/src/pages/livechat/livechat.html">Chat en vivo</a></li>
+            <li><a href="/src/pages/recursos/recursos.html">Recursos</a></li>
+        </ul>
+    </div>
+    <div class="divider"></div>
+</nav>
+</header>
+
+<main style="display: grid; place-content: center;">
+    <h1 style="margin-top: 100px;">Descargue y vea aquí recursos <br> para mejorar su aprendizaje</h1>
+    <button id="toggleMenuBtn">Mostrar Recursos</button>
+    <div id="dropdownMenu" class="dropdown-menu">
+        <ul>
+            <li><a href="/public/media/libros/INACAP-V1.pdf" download>INACAP BOOK V1</a></li>
+            <li><a href="/public/media/libros/INACAP-V2.pdf" download>INACAP BOOK V2</a></li>
+            <li><a href="/public/media/libros/INACAP-V3.pdf" download>INACAP BOOK V3</a></li>
+            <li><a href="/public/media/libros/INACAP-V4.pdf" download>INACAP BOOK V4</a></li>
+            <li><a href="/public/media/libros/INACAP-V5.pdf" download>INACAP BOOK V5</a></li>
+            </ul>
+    </div>
+
+    <button id="toggleMenuBtn2">Mostrar AudioLibros</button>
+    <div id="dropdownMenu2" class="dropdown-menu">
+        <ul>
+            <li>
+                <audio src="/public/media/podcast/COMO ATRAER EL DINERO AUDIOLIBRO EN ESPAÑOL COMPLETO DE JOSEPH MURPHY.mp3" controls loop title="PODCAST - Como atraer el Dinero"></audio>
+
+            </li>
+            <li>
+                <audio src="/public/media/podcast/PODCAST - PROGRAMACIÓN; BASES Y FUNDAMENTOS.mp3" controls loop   title="PODCAST - Fundamentos de la programacion"></audio>
+            </li>
+            <li>
+                <audio src="/public/media/podcast/Programación con Python (Audiolibro) de Robert C. Mathews.mp3" controls loop   title="PODCAST - Programación con Python"></audio>
+            </li>
+            </ul>
+    </div>
+</main>
+
+<footer class="footer">
+    <div>
+        <a href="https://github.com/tuerre" target="_blank" rel="noreferrer" class="link__aka">
+            © <span>Jendry</span>, 2025, Todos los derechos reservados.
+        </a>
+    </div>
+</footer>
+
+<button class="scroll-to-top" id="scrollToTopBtn" title="Ir al inicio">
+<svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#FFFFFF"/></svg>
+</button>
+</div>
+</div>
+
+<script src="/src/script.js"></script>
+<script src="/src/pages/recursos/recursos.js"></script>
+</body>
+</html>

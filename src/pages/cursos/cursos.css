@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: GeisSans;
+    src: url(/public/media/e11418ac562b8ac1-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 100 900
+}
+
+@font-face {
+    font-family: GeistSans_Fallback;
+    src: local("Arial");
+    ascent-override: 85.83%;
+    descent-override: 20.52%;
+    line-gap-override: 9.33%;
+    size-adjust: 107.19%
+}
+
+:root {
+    --primary__color: rgb(250 204 21);
+    --secondaryGray__color: #898b8a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'GeisSans', 'GeistSans_Fallback';
+    color: rgb(255, 255, 255);
+    background-color: rgb(2 6 23);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.nav-tag {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+.logo-container .logo-img {
+    width: 64px;
+    height: 64px;
+}
+
+.main-content {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div_logoTitle {
+    margin: 10px 0 0 15px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    margin: 25px 0 0 50px;
+}
+
+.nav-ul li {
+    padding-left: 20px;
+}
+
+.nav-ul li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#main {
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'GeisSans', 'GeistSans_Fallback';
+    margin-top: 3rem;
+}
+
+.content-minium {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.content-minium span {
+    font-size: 24px;
+}
+
+.spanDEV {
+    color: #09f;
+}
+
+.HR {
+    padding-top: 2rem;
+    margin-top: 20rem;
+    border: 0;
+    border-top: 10px;
+}
+
+.link__decoration {
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 100px;
+    background-color: var(--primary__color);
+    max-width: 500px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: 'GeisSans', 'GeistSans_Fallback';
+}
+
+.link__decoration:hover {
+    background-color: rgb(228, 186, 19);
+}
+
+.link__decoration svg {
+    padding-right: 10px;
+}
+
+.pricing {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #languages {
+    opacity: 1;
+    display: flex;
+  }
+  
+  #frameworks {
+    opacity: 0;
+    display: none;
+  }
+  
+  .pricing h1 {
+    margin-bottom: 1rem;
+    font-size: 36px;
+  }
+
+  .div__grid {
+    display: grid;
+    place-content: center;
+    margin: 0 0 20px 0;
+  }
+  
+  .toggle {
+    margin: 1rem 0;
+    display: grid;
+    place-content: center;
+  }
+
+  .linkBorder__cont {
+    border-radius: 30px;
+    width: 300px;
+    padding: 10px 10px;
+    border: 1px solid #8a8a8a;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    background-color: #1c1c1c; /* Fondo oscuro */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 5px;
+    width: fit-content;
+  }
+  
+  .btn {
+    background-color: transparent; /* Fondo transparente por defecto */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-family: 'GeisSans', 'GeistSans_Fallback';
+  }
+  
+  .btn.active {
+    background-color: #fff; /* Fondo blanco para el botón activo */
+    color: #000; /* Texto negro para el botón activo */
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #333; /* Fondo más claro al pasar el cursor */
+    color: #fff;
+  }
+
+  .suscribe__plan {
+    font-family: 'GeisSans', 'GeistSans_Fallback';
+  }
+
+  .billing, .juniorText {
+    color: #585858;
+  }
+  
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .plan {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan h2 {
+    margin-top: 0;
+  }
+  
+  .plan .price {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  
+  .plan .price span {
+    font-size: 1rem;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .plan ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .plan button {
+    background: #00b894;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .plan.basic {
+    border: 2px solid #e17055;
+  }
+  
+  .plan.expert {
+    border: 2px solid #0984e3;
+  }
+  
+  .plan.duo {
+    border: 2px solid #6c5ce7;
+  }

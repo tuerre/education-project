@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Interactivo</title>
+  <link rel="stylesheet" href="/src/pages/cuestionarios/encuesta.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz: HTML, CSS y JavaScript</h1>
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <div class="question">
+          <h3>1. ¿Qué significa HTML?</h3>
+          <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label><br>
+          <label><input type="radio" name="q1" value="b"> HighText Machine Language</label><br>
+          <label><input type="radio" name="q1" value="c"> HyperText Machine Language</label>
+        </div>
+        <!-- Pregunta 2 -->
+        <div class="question">
+          <h3>2. ¿Qué propiedad en CSS cambia el color de fondo?</h3>
+          <label><input type="radio" name="q2" value="a"> color</label><br>
+          <label><input type="radio" name="q2" value="b"> background-color</label><br>
+          <label><input type="radio" name="q2" value="c"> bgcolor</label>
+        </div>
+        <!-- Pregunta 3 -->
+        <div class="question">
+          <h3>3. ¿Qué etiqueta se usa para insertar un JavaScript en HTML?</h3>
+          <label><input type="radio" name="q3" value="a"> &lt;javascript&gt;</label><br>
+          <label><input type="radio" name="q3" value="b"> &lt;script&gt;</label><br>
+          <label><input type="radio" name="q3" value="c"> &lt;js&gt;</label>
+        </div>
+        <!-- Pregunta 4 -->
+        <div class="question">
+          <h3>4. ¿Cuál es el valor por defecto de la propiedad "position" en CSS?</h3>
+          <label><input type="radio" name="q4" value="a"> relative</label><br>
+          <label><input type="radio" name="q4" value="b"> absolute</label><br>
+          <label><input type="radio" name="q4" value="c"> static</label>
+        </div>
+        <!-- Pregunta 5 -->
+        <div class="question">
+          <h3>5. ¿Cuál es el resultado de "2 + '2'" en JavaScript?</h3>
+          <label><input type="radio" name="q5" value="a"> 4</label><br>
+          <label><input type="radio" name="q5" value="b"> 22</label><br>
+          <label><input type="radio" name="q5" value="c"> NaN</label>
+        </div>
+        <!-- Pregunta 6 -->
+        <div class="question">
+          <h3>6. ¿Cuál es el propósito de "flexbox" en CSS?</h3>
+          <label><input type="radio" name="q6" value="a"> Crear diseños responsivos</label><br>
+          <label><input type="radio" name="q6" value="b"> Cambiar colores de texto</label><br>
+          <label><input type="radio" name="q6" value="c"> Aplicar transiciones</label>
+        </div>
+        <!-- Pregunta 7 -->
+        <div class="question">
+          <h3>7. ¿Qué método se usa para seleccionar un elemento por su ID en JavaScript?</h3>
+          <label><input type="radio" name="q7" value="a"> getElementById</label><br>
+          <label><input type="radio" name="q7" value="b"> querySelector</label><br>
+          <label><input type="radio" name="q7" value="c"> getElementsByClassName</label>
+        </div>
+        <!-- Pregunta 8 -->
+        <div class="question">
+          <h3>8. ¿Qué significa "DOM" en JavaScript?</h3>
+          <label><input type="radio" name="q8" value="a"> Data Object Model</label><br>
+          <label><input type="radio" name="q8" value="b"> Document Object Model</label><br>
+          <label><input type="radio" name="q8" value="c"> Document Oriented Model</label>
+        </div>
+        <!-- Pregunta 9 -->
+        <div class="question">
+          <h3>9. ¿Qué unidad de medida es relativa al tamaño de la fuente en CSS?</h3>
+          <label><input type="radio" name="q9" value="a"> px</label><br>
+          <label><input type="radio" name="q9" value="b"> em</label><br>
+          <label><input type="radio" name="q9" value="c"> %</label>
+        </div>
+        <!-- Pregunta 10 -->
+        <div class="question">
+          <h3>10. ¿Qué evento se usa para ejecutar código cuando se hace clic en un botón en JavaScript?</h3>
+          <label><input type="radio" name="q10" value="a"> hover</label><br>
+          <label><input type="radio" name="q10" value="b"> onclick</label><br>
+          <label><input type="radio" name="q10" value="c"> change</label>
+        </div>
+        <button type="button" onclick="mostrarResultados()">Mostrar resultados</button>
+      </form>
+    <div id="resultados"></div>
+    <button type="button" onclick="borrarResultados()">Reiniciar preguntas</button>
+
+  </div>
+
+  <script src="/src/pages/cuestionarios/encuesta.js"></script>
+</body>
+</html>

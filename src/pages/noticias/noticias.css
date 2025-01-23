@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D0E12;
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0 40px 0 0;
+}
+
+/* HEADER STYLES */
+
+.allHeader {
+    width: 100%;
+    padding: 10px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+}
+
+.logoNav img {
+    margin-right: 10px;
+}
+
+.logoNav span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hubLogo {
+    color: #535353;
+}
+
+.toBack__button {
+    margin-top: 10px;
+}
+
+.afterButton {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.897);
+    font-weight: bold;
+    background-color: #fc619c;
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.afterButton:hover {
+    background-color: #fc619cdf;
+    color: rgb(0, 0, 0);
+}
+
+/* LEFT NAV STYLES */
+
+.nav__main__container {
+    display: flex;
+    gap: 50px;
+}
+
+nav {
+    width: 25vw;
+    background-color: transparent;
+    border-top: 2px solid #6767675c;
+    border-right: 2px solid #6767675c;
+    padding: 20px 0 0 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.allNav {
+    margin-top: 50px;
+    position: fixed;
+}
+
+svg {
+    fill: #ffffff;
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px
+}
+
+.account img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.account span {
+    margin-top: 10px;
+}
+
+.allNav h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.actions h3 {
+    margin-top: 15px;
+}
+
+.allNav span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.allNav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.star {
+    fill: rgb(255, 255, 0);
+}
+
+
+/* CARD POST STYLES */
+
+#main {
+    margin-top: 80px;
+}
+
+.allPosts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    place-content: center;
+}
+
+.title {
+    background-color: #292a2ea2;
+    border-radius: 10PX;
+    padding: 8px 5px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #ffffffcf;
+    margin-bottom: 20px;
+}
+
+.title svg {
+    width: 20px;
+    height: 20px;
+}
+
+.title h2 {
+    font-size: 15px;
+}
+
+.cardPost {
+    background-color: #1c1f26;;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    border: 1px solid #a8b3cf34;
+    padding: 15px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.cardPost:hover {
+    border: 1px solid #a8b3cf80;
+}
+
+.userAuthor {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.allCard h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.allCard .timeFooter {
+    color: #7a808e;
+    font-size: 15px;
+    margin-top: 80px;
+}
+
+.time {
+    margin-top:m 1px;
+    margin-bottom: 5px;
+}
+
+
+.footerInteractions {
+    display: flex;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+
+.footerInteractions svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    fill: #FFFFFF;
+}
+
+.footerInteractions span {
+    color: #ffffffb2;
+    margin-right: 10px;
+}
+
+.bgPost {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.searchNav {
+    background-color: #1c1f26;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 20px;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+input {
+    outline: none; /* Quitar el contorno */
+    font-size: 18px;
+}
+
+.searchNav svg {
+    width: 25px;
+    height: 25px;
+}
+
+#buscador__nav {
+    background-color: transparent;
+    border: none;
+    padding: 15px 0;
+    color: #FFFFFF;
+}
+
+input:focus {
+    border: none;
+}
+
+#clearSearch {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 50px
+}
+
+
+/* Móviles pequeños */
+@media (max-width: 480px){
+    .allPosts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .toBack__button {
+        display: none;
+    }
+  }
+  
+  /* Teléfonos estándar */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .allPosts {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
+
+    .toBack__button {
+        display: none;
+    }
+
+    .title {
+        margin-left: 50px;
+    }
+  }
+  
+  /* Tabletas */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .allPosts {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 150px;
+    }
+
+    .toBack__button {
+        display: none;
+    }
+
+    .title {
+        margin-left: 150px;
+    }
+
+    nav {
+        width: 25vw;
+    }
+  }
+  
+  /* Laptops */
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    .allPosts {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+    }
+
+    .title {
+        margin-left: 50px;
+    }
+
+    nav {
+        width: 20vw;
+    }
+  }
+  
+  /* Monitores grandes */
+  @media (min-width: 1601px) and (max-width: 1920px) {
+    .allPosts {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  }
